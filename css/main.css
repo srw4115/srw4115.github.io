@@ -1,0 +1,172 @@
+html{
+    background : #e5e5e5;
+}
+
+html,article,section{
+    font-size : 12px;
+    font-family:"Arial";
+    font-weight:bold;
+}
+article{
+    width : 800px;
+    margin:0 auto 2rem auto;
+    background : #fff;
+    padding-bottom : 4rem;
+}
+.about_me {
+    position : relative;
+}
+
+.about_me h1{
+   background-color:#42d5ff;
+   height : 13.5rem;
+   color : #fff;
+   font-weight : bold;
+   overflow : hidden;
+   
+}
+
+.about_me h1 span{
+    padding: 0 0 0 25rem;
+     height : 13.5rem;
+    display:block;
+    line-height: 18.4rem;
+}
+
+.about_me h1 span small{
+    font-size : 65px;
+}
+
+.about_me h1 big{
+    font-size: 156px;
+}
+
+.head,.head .pic{
+    border-radius : 8px;
+    border: solid 1px #e5e5e5;
+    behavior: url(./css/PIE.htc);
+}
+
+.head{
+    position:absolute;
+    top:2.5rem;
+    left : 2.4rem; 
+    padding : 1rem;
+    background-color:#fff;
+}
+
+.head .pic{
+    height : 15.4rem;
+    width : 15.4rem;
+    position : relative;    /*for fix pie.htc bug*/
+    background:url(../images/head.png) no-repeat;
+}
+
+.about_me .info{
+    margin-left : 31rem;
+}
+.about_me .info li{
+    margin-top : 1rem;
+}
+.about_me .info img, .about_me .info  span{
+    vertical-align: middle;
+}
+.about_me .info a{
+    color : #42d5ff;
+}
+.about_me .info li span{
+    display : inline-block;
+    font-size : 18px;
+    margin-left : 1.2rem;
+}
+.about_me .info a:hover{
+    color : #00C6FF;
+}
+
+article  section{
+    padding : 2.5rem 3rem 2.5rem 2.5rem;
+    color : #42d5ff;
+}
+article  section .title{
+    background:url(../images/hex_blue.png) no-repeat;
+    height : 4rem; 
+    line-height: 4rem;
+    font-size : 29px;
+    padding-left : 2.4rem;
+}
+.title_bar{
+    height : 2px;
+    width : 538px;
+    border : solid 1px #7de2ff;
+    margin-top:-41px;
+    margin-left: 168px;
+    border-left: 0;
+}
+
+article  section.odd{
+    background : #ff8e6d;
+    color : #fff;
+    behavior: url(./css/PIE.htc);
+}
+article  section.odd .title  {
+    background:url(../images/hex_white.png) no-repeat;
+}
+article  section.odd .title_bar {
+    border : solid 1px #fff;
+    border-left: 0;
+}
+
+article  section .title big{
+    font-size : 40px;
+}
+
+.container{
+    position : relative;
+    margin-left : 22.5rem;
+}
+
+
+.timeline .bar{
+    position:absolute;
+    top : 0.5rem;
+    bottom:0;
+}
+.timeline .text{
+    margin-left : 1.5rem;
+    font-size : 16px;
+}
+.timeline .text span{
+    padding-left : 2em;
+    display: block;
+    margin-top : 1em;
+}
+.timeline .circle , .timeline .line{
+    border : solid 1px #42d5ff;
+}
+
+.timeline .circle{
+    width : 10px;
+    height : 10px;
+    border-radius:100px;
+    position : relative;
+    behavior: url(./css/PIE.htc);
+}
+.timeline .line{
+    width : 0px;
+    height : 7.3rem;
+    margin-left : 5px;
+}
+.timeline  .text .time{
+    font-size : 18px;
+}
+.timeline .time.child{
+   margin-top: 3.8rem;
+}
+
+.skill{
+    font-size : 18px;
+}
+.skill div{
+    line-height: 2rem;
+    margin-bottom : 1.8rem;
+}

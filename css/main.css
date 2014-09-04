@@ -26,14 +26,14 @@ article{
    
 }
 
-.about_me h1 span{
+.about_me h1 .text{
     padding: 0 0 0 25rem;
      height : 13.5rem;
     display:block;
     line-height: 18.4rem;
 }
 
-.about_me h1 span small{
+.about_me h1 .text .small{
     font-size : 65px;
 }
 

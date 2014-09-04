@@ -37,7 +37,7 @@ article{
     font-size : 65px;
 }
 
-.about_me h1 big{
+.about_me h1 .big{
     font-size: 156px;
 }
 
@@ -116,7 +116,7 @@ article  section.odd .title_bar {
     border-left: 0;
 }
 
-article  section .title big{
+article  section .title .big{
     font-size : 40px;
 }
 

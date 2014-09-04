@@ -2,7 +2,7 @@ html{
     background : #e5e5e5;
 }
 
-html,article,section,h2{
+html,article,section{
     font-size : 12px;
     font-family:"Arial";
     font-weight:bold;
@@ -94,6 +94,11 @@ article  section .title{
     font-size : 29px;
     padding-left : 2.4rem;
 }
+
+article  section .title h2{
+    font-weight:bold;
+}
+
 .title_bar{
     height : 2px;
     width : 538px;

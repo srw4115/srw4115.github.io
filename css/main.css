@@ -2,7 +2,7 @@ html{
     background : #e5e5e5;
 }
 
-html,article,section{
+html,article,section,h2{
     font-size : 12px;
     font-family:"Arial";
     font-weight:bold;

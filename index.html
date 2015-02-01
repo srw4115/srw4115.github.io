@@ -5,73 +5,83 @@
     <title>srwheaven About Me</title>
     <link rel="stylesheet" type="text/css" href="./css/cssreset-min.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="js/jquery.min.js" type="text/javascript"></script> 
     <!--
-    <script src="http://192.168.1.100:8888/target/target-script-min.js#anonymous"></script>
+        <script src="http://192.168.1.100:8888/target/target-script-min.js#anonymous"></script>
     -->
     <!--[if (gte IE 6)&(lte IE 8)]>
-        <script src="./js/html5.js" type="text/javascript"></script >
-        <script src="./js/rem.min.js" type="text/javascript"></script>
-    <![endif]-->  
+        <script src="js/html5.js" type="text/javascript"></script> 
+        <script src="js/selectivizr-min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/PIE.js"></script>
+    <![endif]--> 
 </head>
 
 <body>
     <article>
-        <header class="about_me">
-            <h1>
-                <span class='text'><span class="big">A</span><span class="small">bout Me</span></span>
-            </h1>
-            <div class="head">
-                <div class="pic"></div>
-            </div>
-            <ul class="info">
-                <li><a target="_blank" href="https://twitter.com/srwheaven"><img src="./images/twitter.png" alt='twitter'><span>@srwheaven</span></a></li>
-                <li><a href="mailto:shadowninja@foxmail.com"><img src="./images/mail.png" alt='mail'><span>shadowninja@foxmail.com</span></a></li>
-            </ul>
-        </header>
-        <section>
-            <div class="title">
-                <h2><span class="big">T</span>imeline</h2>
-                <div class="title_bar"></div>
-            </div>
-            <div class="container timeline">
-                <div class="line"></div>
-                <div class="text">
-                    <div class="time">
-                        <div class="circle"></div>
-                        <span>2008.9   —  2011.6 </span>
-                    </div>
-                    <span>成都东软学院</span>
-                    <div class="time">
-                        <div class="circle"></div>
-                        <span>2011.11  —  2014.6</span>
-                    </div>
-                    <span>梦士达科技有限公司web开发部programmer</span>
-                </div>                
-            </div>
-        </section>
-        <section class="odd">
-            <div class="title">
-                <h2><span class="big">S</span>kill</h2>
-                <div class="title_bar"></div>
-            </div>
-            <div class="container skill">
-                <div>熟练使用css html javascript</div>
-                <div>对html5 css3有一定了解,了解使用createjs套件和原生javascript,曾参与过卡牌游戏开发</div>
-                <div>熟悉jquery,对javascript面向对象技术,requirejs backbone等有一定了解</div>
-                <div>对php等后端脚本有一定了解,会使用模板引擎</div>
-            </div>
-        </section>
-        <section>
-            <div class="title">
-                <h2><span class="big">I</span>nterest</h2>
-                <div class="title_bar"></div>
-            </div>
-            <div class="container skill">
-                <div>动漫游戏</div>
-                <div>喜欢收集web技术咨询,开发者的blog</div>
-            </div>
-        </section>
-</article>
+            <header class="about_me">
+                <h1>
+                    <span class='text'><span class="big">A</span><span class="small">bout Me</span></span>
+                </h1>
+                <div class="head PIE">
+                    <div class="pic PIE"></div>
+                </div>
+                <ul class="info">
+                    <li><a target="_blank" href="https://twitter.com/srwheaven"><img src="./images/twitter.png" alt='twitter'><span>@srwheaven</span></a></li>
+                    <li><a href="mailto:shadowninja@foxmail.com"><img src="./images/mail.png" alt='mail'><span>shadowninja@foxmail.com</span></a></li>
+                </ul>
+            </header>
+            <section>
+                <div class="title">
+                    <h2><span class="big">T</span>imeline</h2>
+                    <div class="title_bar"></div>
+                </div>
+                <div class="container timeline">
+                    <div class="line"></div>
+                    <div class="text">
+                        <div class="time">
+                            <div class="circle"></div>
+                            <span>2008.9   —  2011.6 </span>
+                        </div>
+                        <span>成都东软学院</span>
+                        <div class="time">
+                            <div class="circle"></div>
+                            <span>2011.11  —  2014.6</span>
+                        </div>
+                        <span>梦士达科技有限公司web开发部programmer</span>
+                    </div>                
+                </div>
+            </section>
+            <section class="odd">
+                <div class="title">
+                    <h2><span class="big">S</span>kill</h2>
+                    <div class="title_bar"></div>
+                </div>
+                <div class="container skill">
+                    <div>熟练使用css html javascript</div>
+                    <div>对html5 css3有一定了解,了解使用createjs套件和原生javascript,曾参与过卡牌游戏开发</div>
+                    <div>熟悉jquery,对javascript面向对象技术,requirejs backbone等有一定了解</div>
+                    <div>对php等后端脚本有一定了解,会使用模板引擎</div>
+                </div>
+            </section>
+            <section>
+                <div class="title">
+                    <h2><span class="big">I</span>nterest</h2>
+                    <div class="title_bar"></div>
+                </div>
+                <div class="container skill">
+                    <div>动漫游戏</div>
+                    <div>喜欢收集web技术咨询,开发者的blog</div>
+                </div>
+            </section>
+    </article>
 </body>
-
+<script>
+    $(function() {
+        if (window.PIE) {
+            $('.PIE,.circle').each(function() {
+                PIE.attach(this);
+            });
+        }
+    });
+</script>
 </html>

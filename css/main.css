@@ -9,9 +9,9 @@ html,article,section{
 }
 article{
     width : 800px;
-    margin:0 auto 2rem auto;
+    margin:0 auto 24px auto;
     background : #fff;
-    padding-bottom : 4rem;
+    padding-bottom : 48px;
 }
 .about_me {
     position : relative;
@@ -19,7 +19,7 @@ article{
 
 .about_me h1{
    background-color:#42d5ff;
-   height : 13.5rem;
+   height : 162px;
    color : #fff;
    font-weight : bold;
    overflow : hidden;
@@ -27,10 +27,10 @@ article{
 }
 
 .about_me h1 .text{
-    padding: 0 0 0 25rem;
+    padding: 0 0 0 300px;
      height : 13.5rem;
     display:block;
-    line-height: 18.4rem;
+    line-height: 220px;
 }
 
 .about_me h1 .text .small{
@@ -44,29 +44,28 @@ article{
 .head,.head .pic{
     border-radius : 8px;
     border: solid 1px #e5e5e5;
-    behavior: url(./css/PIE.htc);
 }
 
 .head{
     position:absolute;
-    top:2.5rem;
-    left : 2.4rem; 
-    padding : 1rem;
+    top:30px;
+    left : 29px; 
+    padding : 12px;
     background-color:#fff;
 }
 
 .head .pic{
-    height : 15.4rem;
-    width : 15.4rem;
+    height : 185px;
+    width : 185px;
     position : relative;    /*for fix pie.htc bug*/
     background:url(../images/head.png) no-repeat;
 }
 
 .about_me .info{
-    margin-left : 31rem;
+    margin-left : 372px;
 }
 .about_me .info li{
-    margin-top : 1rem;
+    margin-top : 12px;
 }
 .about_me .info img, .about_me .info  span{
     vertical-align: middle;
@@ -78,22 +77,22 @@ article{
 .about_me .info li span{
     display : inline-block;
     font-size : 18px;
-    padding-left : 1.2rem;
+    padding-left : 15px;
 }
 .about_me .info a:hover{
     color : #00C6FF;
 }
 
 article  section{
-    padding : 2.5rem 3rem 2.5rem 2.5rem;
+    padding : 30px 36px 30px 30px;
     color : #42d5ff;
 }
 article  section .title{
     background:url(../images/hex_blue.png) no-repeat;
-    height : 4rem; 
-    line-height: 4rem;
+    height : 48px; 
+    line-height: 48px;
     font-size : 29px;
-    padding-left : 2.4rem;
+    padding-left : 29px;
     position : relative;
 }
 
@@ -110,13 +109,11 @@ article  section .title h2{
     top : 11px;
     border-left: 0;
 }
-
-article  section.odd{
+article  section:nth-child(odd){
     background : #ff8e6d;
     color : #fff;
-    behavior: url(./css/PIE.htc);
 }
-article  section.odd .title  {
+article  section:nth-child(odd) .title  {
     background:url(../images/hex_white.png) no-repeat;
 }
 article  section.odd .title_bar {
@@ -130,7 +127,7 @@ article  section .title .big{
 
 .container{
     position : relative;
-    margin-left : 22.5rem;
+    margin-left : 270px;
 }
 
 
@@ -140,13 +137,13 @@ article  section .title .big{
     bottom:0;
 }
 .timeline .text{
-    padding-left : 1.5rem;
+    padding-left : 18px;
     font-size : 16px;
 }
 .timeline .text span{
-    padding-left : 2em;
+    padding-left : 24px;
     display: block;
-    margin-top : 1em;
+    margin-top : 12px;
 }
 .timeline .text .time{
     font-size : 0;
@@ -170,7 +167,6 @@ article  section .title .big{
     background : #fff;
     margin-left: -23px;
     position: relative;
-    behavior: url(./css/PIE.htc);
 }
 
 .circle{
@@ -185,11 +181,11 @@ article  section .title .big{
     top:0px;
     bottom:0px;
     position:absolute;
-    margin:10px 0 50px 0;
+    margin:10px 0 40px 0;
 }
 .timeline  .text .time{
     font-size : 18px;
-    margin-top: 3.8rem;
+    margin-top: 46px;
 }
 .timeline .text .time:first-child{
    margin-top: 0px;
@@ -199,6 +195,6 @@ article  section .title .big{
     font-size : 18px;
 }
 .skill div{
-    line-height: 2rem;
-    margin-bottom : 1.8rem;
+    line-height: 24px;
+    margin-bottom : 22px;
 }

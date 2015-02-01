@@ -128,6 +128,7 @@ article  section .title .big{
 .container{
     position : relative;
     margin-left : 270px;
+    zoom : 1;
 }
 
 

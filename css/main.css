@@ -73,11 +73,12 @@ article{
 }
 .about_me .info a{
     color : #42d5ff;
+    text-decoration : none;
 }
 .about_me .info li span{
     display : inline-block;
     font-size : 18px;
-    margin-left : 1.2rem;
+    padding-left : 1.2rem;
 }
 .about_me .info a:hover{
     color : #00C6FF;
@@ -93,6 +94,7 @@ article  section .title{
     line-height: 4rem;
     font-size : 29px;
     padding-left : 2.4rem;
+    position : relative;
 }
 
 article  section .title h2{
@@ -103,8 +105,9 @@ article  section .title h2{
     height : 2px;
     width : 538px;
     border : solid 1px #7de2ff;
-    margin-top:-41px;
-    margin-left: 168px;
+    position : absolute;
+    left: 195px;
+    top : 11px;
     border-left: 0;
 }
 
@@ -132,12 +135,12 @@ article  section .title .big{
 
 
 .timeline .bar{
-    position:absolute;
-    top : 0.5rem;
+    float: left;
+    padding-top: 6px;
     bottom:0;
 }
 .timeline .text{
-    margin-left : 1.5rem;
+    padding-left : 1.5rem;
     font-size : 16px;
 }
 .timeline .text span{
@@ -145,27 +148,51 @@ article  section .title .big{
     display: block;
     margin-top : 1em;
 }
+.timeline .text .time{
+    font-size : 0;
+    position:relative;
+}
+.timeline .text .time  span{
+    padding-left : 0px;
+    margin-top : 0px;
+    display : inline;
+}
+
 .timeline .circle , .timeline .line{
     border : solid 1px #42d5ff;
 }
 
 .timeline .circle{
-    width : 10px;
-    height : 10px;
-    border-radius:100px;
-    position : relative;
+    display: inline-block;
+    vertical-align: middle;
+    *display : inline;
+    *zoom : 1;
+    background : #fff;
+    margin-left: -23px;
+    position: relative;
     behavior: url(./css/PIE.htc);
 }
+
+.circle{
+  height : 10px;
+  width : 10px;
+  border-radius:100px;
+}
+
 .timeline .line{
-    width : 0px;
-    height : 7.3rem;
-    margin-left : 5px;
+    width:0px;
+    border:1px solid #42d5ff;
+    top:0px;
+    bottom:0px;
+    position:absolute;
+    margin:10px 0 50px 0;
 }
 .timeline  .text .time{
     font-size : 18px;
+    margin-top: 3.8rem;
 }
-.timeline .time.child{
-   margin-top: 3.8rem;
+.timeline .text .time:first-child{
+   margin-top: 0px;
 }
 
 .skill{

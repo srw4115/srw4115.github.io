@@ -163,11 +163,11 @@ article  section .title .big{
 .timeline .circle{
     display: inline-block;
     vertical-align: middle;
-    *display : inline;
-    *zoom : 1;
     background : #fff;
     margin-left: -23px;
     position: relative;
+    *display : inline;
+    *zoom : 1;    
 }
 
 .circle{

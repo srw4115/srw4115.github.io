@@ -74,14 +74,14 @@
                 </div>
             </section>
     </article>
+    <script>
+        $(function() {
+            if (window.PIE) {
+                $('.PIE,.circle').each(function() {
+                    PIE.attach(this);
+                });
+            }
+        });
+    </script>    
 </body>
-<script>
-    $(function() {
-        if (window.PIE) {
-            $('.PIE,.circle').each(function() {
-                PIE.attach(this);
-            });
-        }
-    });
-</script>
 </html>
